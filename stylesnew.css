@@ -1,0 +1,48 @@
+/* Grid layout */
+.container {
+    display: grid;
+    grid-template-areas:
+      'header header'
+      'sidebar content'
+      'footer footer';
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    height: 100vh;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #4CAF50;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #2196F3;
+  }
+  
+  .content {
+    grid-area: content;
+    background-color: #f1f1f1;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #f44336;
+  }
+  
+  /* Flexbox layout inside the content area */
+  .flex-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    background-color: #555;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+  }
+  
